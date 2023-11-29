@@ -1,0 +1,58 @@
+h1 {
+text-align: center;
+}
+button {
+    border-radius: .5em;
+}
+.control-block {
+    display: flex;
+    justify-content: center;
+}
+.control-block-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.control-block-buttons {
+    margin-left: 1em;
+}
+.control-block-buttons button {
+    padding: 1em;
+    margin: 1em .2em;
+}
+.control-block-buttons button:first-child {
+
+    background-color: rgb(255, 235, 80);
+    border: 1px solid rgb(103, 95, 35);
+
+}
+.control-block-buttons button:last-child {
+    background-color: rgb(199, 94, 94);
+    border: 1px solid rgb(103, 35, 35);
+}
+.notes-block {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    
+}
+.notes-block-card {
+    border: 1px solid black;
+    position: relative;
+    
+}
+.card__btn_close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 3vh;
+    height: 3vh;
+    padding: 0;
+    border-radius: 50%;
+}
+.card__btn_close:active {
+    background-color: rgb(100, 0, 193);
+}
+.card__btn_close:hover {
+    background-color: rgb(95, 128, 188);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello Forms</title>
+</head>
+<body>
+    <h1>Регистрация для участников спортивного марафона</h1>
+    <div class="container">
+
+        <form action="" method="post" autocomplete="off">
+            <input type="text" class="form__input_text" name="name" placeholder="Имя">
+            <input type="text" class="form__input_text" name="surname" placeholder="Фамилия">
+            <input type="text" class="form__input_text" name="age" placeholder="Возраст, лет">
+            <input type="text" class="form__input_text" name="height" placeholder="Рост, см">
+            <input type="text" class="form__input_text" name="weight" placeholder="Вес, кг">
+            <div class="form__input_btns">
+                <input type="submit" class="form__input_btn" name="submit" value="Отправить">
+                <input type="reset" class="form__input_btn" name="reset" value="Сбросить">
+
+            </div>
+        </form>
+    </div>
+    <div class="modal__out">
+        <div class="modal_in">
+            <h2 class="modal_header">Поздравляем!</h2>
+            <p class="modal__text">Вы успешно зарегистрировались на марафон</p>
+            <div class="modal__close"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
