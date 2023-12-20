@@ -14,9 +14,12 @@ const validNumber = (num) => {
 }
 
 const setModalVisibility = (isVisible) =>{
-    const display = isVisible ? 'flex' : 'none'
-    document.querySelector('.modal__out').style.display = display
-}
+    if (fullName()){
+
+        const display = isVisible ? 'flex' : 'none'
+        document.querySelector('.modal__out').style.display = display
+    }
+    }
     
 
 const submit = (event) =>  {
@@ -29,3 +32,12 @@ form['submit'].onclick = submit
 document.querySelector('.modal__close').onclick = () => setModalVisibility(false)
 document.querySelector('.modal__out').onclick = () => setModalVisibility(false)
 document.querySelector('.modal_in').onclick = (event) => event.stopPropagation()
+
+
+const fullName = () => {
+    const form = getForm()
+    const _val = form['name'].value
+    return Boolean(_val)
+
+}
+// setInterval(()=>console.log(fullName()),1000)
