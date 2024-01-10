@@ -11,7 +11,7 @@
     <h1>Регистрация для участников спортивного марафона</h1>
     <div class="container">
 
-        <form action="" method="post" autocomplete="off">
+        <form action="" method="post" autocomplete="off" class="container__form">
             <input type="text" class="form__input_text" name="name" placeholder="Имя">
             <input type="text" class="form__input_text" name="surname" placeholder="Фамилия">
             <input type="text" class="form__input_text" name="age" placeholder="Возраст, лет">
@@ -31,6 +31,13 @@
             <div class="modal__close"></div>
         </div>
     </div>
+    <ol class="list-participants">
+        <caption>Список участников:</caption>
+        <li>Участник номер 0 Тест Тестович</li>
+        <caption>Всего участников:0</caption>
+    </ol>
+    <script src="./models/participantModel.js"></script>
+    <script src="./utils/validation.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
